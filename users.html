@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="seo" content="">
+
+    <title id="title"> Dashboard &middot; Users</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- css -->
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+                    <a href="../" class="navbar-brand">
+                        <i id="logo" class="fa fa-tachometer fa-1x"></i>
+                        &nbsp;
+                        dashboards
+                    </a>
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a href="#" class="navbar-link site-link" id="site-link" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View website">
+                                view site
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#side-nav" aria-controls="side-nav" aria-expanded="False" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Show Nav">
+                        <span>
+                            <i class="fa fa-bars fa-1x"></i>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+            <div class="col-lg-2">
+                <nav class="navbar-dark navbar bg-dark navbar-expand-md">
+                    <ul id="side-nav" class="side-nav navbar-nav flex-column navbar-expand-md collapse navbar-collapse">
+                        <li class="nav-item profile">
+                            <div class="dropdown logout">
+                                <button class="btn dropdown-toggle" type="button" id="logoutButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div id="profile-image" class="profile-image">
+                                        <i class="fa fa-user-circle fa-3x"></i>
+                                    </div>
+                                    <span id="profile-name" class="profile-name">
+                                        hi james
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu navbar-dark bg-dark" aria-labelledby="logoutButton">
+                                    <li>
+                                        <a  href="#" class="dropdown-item">
+                                            <i class="fa fa-user fa-1x"></i>&nbsp; profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a  href="#" class="dropdown-item">
+                                            <i class="fa fa-sign-out fa-1x"></i>&nbsp; sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                <i class="fa fa-line-chart fa-1x"></i> &nbsp; summary
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="schools.html" class="nav-link">
+                                <i class="fa fa-graduation-cap fa-1x"></i> &nbsp; schools
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="sportsActivities.html" class="nav-link">
+                                <i class="fa fa-soccer-ball fa-1x"></i> &nbsp; sports & activities
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="streamingVideos.html" class="nav-link">
+                                <i class="fa fa-film fa-1x"></i> &nbsp; streaming videos
+                            </a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="users.html" class="nav-link active">
+                                <i class="fa fa-users fa-1x"></i> &nbsp; users
+                            </a>
+                        </li>    
+                        <li class="nav-item">
+                            <a href="packages.html" class="nav-link">
+                                <i class="fa fa-boxes fa-1x"></i> &nbsp; packages
+                            </a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a href="websitePages.html" class="nav-link">
+                                <i class="fa fa-users fa-1x"></i> &nbsp; Website Pages
+                            </a>
+                        </li>                
+                        <li class="nav-item">
+                            <a href="settings.html" class="nav-link">
+                                <i class="fa fa-gear fa-1x"></i> &nbsp; settings
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-10">
+                <div class="content" id="content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- js script -->
+    <script src="static/jquery/jquery.js"></script>
+    <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/fontawesome/js/all.min.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/async.js"></script>
+</html>

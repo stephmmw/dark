@@ -1,0 +1,317 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #212529;
+}
+.navbar{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px rgb(57, 57, 57) solid;
+}
+.navbar-brand{
+    font-size: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.site-link{
+    right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #FFF;
+    font-size: 80%;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.site-link:hover{
+    color: #878787;
+}
+.fa-globe{
+    color: #FFF;
+}
+.primary-nav, .toggle-container{
+    width:100%;
+}
+.navbar-toggler{
+    background-color: #363c42;
+    border-color:#363c42;
+}
+.navbar-toggler:hover{
+    color:rgb(198, 198, 198);
+    background-color: #404951;
+    border-color: #404951;
+}
+.side-nav{
+    width: 100%;
+    min-height: 91.5vh;
+    color:#FFF;
+    font-size:0.95rem;
+    font-weight:700;
+    text-transform: capitalize;
+}
+.side-nav .nav-item{
+    width: 100%;
+    text-align: left;
+}
+.side-nav .nav-item .nav-link{
+    margin-top:15px;
+    padding-left: 10px;
+    border-radius:5px;
+}
+.side-nav .nav-link{
+    color:#FFF;
+}
+.side-nav .nav-item .nav-link:hover{
+    background-color: rgb(140, 140, 140);
+}
+.side-nav .nav-item .active, .side-nav .nav-item .nav-link.active:hover{
+    background-color: #474747;
+}
+.profile{
+    padding-bottom:10px;
+}
+.logout{
+    margin-top:2vh;
+    text-align:center;
+}
+.logout .btn{
+    color: #FFF;
+    border-width: 3px;
+    border-color:transparent;
+    background-color:#363c4280;
+}
+.btn:focus{
+    border-color: rgba(128, 0, 128, 0.581);
+}
+.profile-name{
+    font-size:14px;
+    font-weight:600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.logout .dropdown-menu li a{
+    color:#FFF;
+    font-weight:600;
+}
+.logout .dropdown-menu li a:hover{
+    background-color: #404951;
+}
+
+.divider{    
+    margin-top:10px;
+    padding:10px;
+    font-size:0.75rem;
+    font-weight:700;
+    border-top:2px #8b8b8b solid;
+    border-radius:2px;
+}
+.content{
+    width:100%;
+    height: 91.5vh;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    background-color: rgb(57, 57, 57); 
+}
+.page-head{
+    width:100%;
+    background-color: #212529d7;
+    text-align:center;
+}
+.page-header{
+    color:#FFF;
+    padding:10px;
+    font-size: 1.25rem;
+    font-weight:700;
+    text-transform: uppercase;
+}
+.page-nav{
+    width:100%;
+    padding:5px;
+}
+.form-input{
+    border: 0px transparent solid;
+}
+.search, .filter, .filter>option{
+    font-weight:700;
+    border-radius: 2px;
+    border-width: 2px;
+    border-color:#878787;
+    text-transform: capitalize;
+}
+.search{
+    border-right-width: 2px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius:0px;
+    background-color: #474747;
+}
+.filter{
+    color:rgb(200, 200, 200);
+    border-left-width: 1px;
+    border-left-color:#c2c2c2;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius:0px;
+    background-color: #333333;
+}
+.search::placeholder{
+    color:rgba(255, 255, 255, 0.937);
+}
+.search:focus, .filter:focus{
+    background-color:transparent;
+    color: rgb(200, 200, 200)
+}
+.filter>option, .search>option{
+    color:#FFF;
+    background-color:#363c42;
+}
+.btn-search{
+    margin-left:3px;
+    border-radius: 2px;
+}
+.page-items{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.page-item{
+    margin:1px;
+    margin-top: 20px;
+}
+.item{
+    color:#FFF;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.item .card{
+    border-color: transparent;
+    background-color: rgba(79, 79, 79, 0.6);
+}
+.item:hover{
+    color:rgb(255, 255, 255);   
+}
+.item:hover .card{
+    background-color: rgba(120, 120, 120, 0.6);
+}
+.item-title{
+    padding-top:10px;
+    font-weight:600;
+}
+.img{
+    width:60px;
+    height:60px;
+}
+.add-btn-container{
+    position:fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index:2;
+}
+
+.modal-content{
+    color:#FFF;
+    border:2px rgb(119, 119, 119) solid;
+    background-color: rgb(74, 74, 74);
+}
+.modal-header{
+    background-color:#212529;
+    border-bottom: 2px rgb(74, 74, 74) solid;
+}
+.modal-title{
+    width:100%;
+    text-align: center;
+    text-transform:capitalize;
+}
+.btn-modal-close{
+    color:#FFf;
+}
+
+.logo{
+    text-align:center;
+}
+.logo-preview{
+    margin-bottom:20px;
+}
+
+.logo-preview .logo{
+    width:120px;
+    height:120px;
+    padding: 2px;
+    border: 2px #212529 solid;
+    border-radius: 2px;
+}
+
+.logo-upload{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content:center;
+    padding-top: 5px;
+}
+.logo-upload input[type='file']{
+    width: 0.05px;
+    height: 0.05px;
+    position:absolute;
+    z-index: -1;
+}
+.logo-upload label{
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #FFF;
+    border-color: #212529;
+    background-color: #212529;
+    text-transform:capitalize;
+}
+
+.school-info{
+    padding:5px;
+    border: 2px #727272 solid;
+    border-radius: 2px;
+}
+.school-info-header{
+    margin-top: 30px;
+    font-weight:600;
+    text-transform:capitalize;    
+}
+.school-info .form-group{
+    padding-top:10px;
+}
+.school-info .input-group{
+    margin-bottom: 10px;
+}
+.school-info .input-group .label{
+    padding-top:5px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.school-info .form-group .input-group .input,
+.input>option{
+    width:100%;
+    font-weight:700;
+    text-transform: capitalize;
+}
+.input>option{
+    color:#FFF;
+    background-color: #212529;
+}
+.form-btn{
+    width:100%;
+    margin-top:15px;
+}
+.form-btn .btn{
+    font-weight:700;
+    text-transform: capitalize;
+}
+.form-btn .cancel .btn{
+    border-color:#212529;
+    background-color: #212529;
+}
+.form-btn .cancel .btn:hover{
+    border-color:#31373e;
+    background-color: #31373e;
+}
+.form-btn .save{
+    text-align:right;
+}
