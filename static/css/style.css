@@ -106,7 +106,8 @@ body{
 }
 .content{
     width:100%;
-    height: 91.5vh;
+    height: 95vh;
+    padding-bottom: 50px;
     overflow-y: scroll;
     overflow-x:hidden;
     background-color: rgb(57, 57, 57); 
@@ -196,6 +197,7 @@ body{
 }
 .item-title{
     padding-top:10px;
+    font-size: 14px;
     font-weight:600;
 }
 .img{
@@ -203,7 +205,7 @@ body{
     height:60px;
 }
 .add-btn-container{
-    position:fixed;
+    position:absolute;
     bottom: 50px;
     right: 40px;
     z-index:2;
@@ -221,7 +223,7 @@ body{
 .modal-title{
     width:100%;
     text-align: center;
-    text-transform:capitalize;
+    text-transform: uppercase;
 }
 .btn-modal-close{
     color:#FFf;
@@ -232,12 +234,13 @@ body{
 }
 .logo-preview{
     margin-bottom:20px;
+    text-align:center;
 }
 
 .logo-preview .logo{
     width:120px;
     height:120px;
-    padding: 2px;
+    padding: 1px;
     border: 2px #212529 solid;
     border-radius: 2px;
 }
@@ -264,29 +267,64 @@ body{
     background-color: #212529;
     text-transform:capitalize;
 }
-
-.school-info{
+.logo-upload label:hover{
+    border-color: rgb(13, 110, 253);
+    background-color: rgb(13, 110, 253);
+}
+.school-info, 
+.team-info,
+.activity-info,
+.sport-info,
+.event-info,
+.match-info{
     padding:5px;
     border: 2px #727272 solid;
     border-radius: 2px;
 }
-.school-info-header{
-    margin-top: 30px;
+.school-info .header, 
+.team-info-header,
+.activity-info-header,
+.event-info-header,
+.match-info-header{
     font-weight:600;
     text-transform:capitalize;    
 }
-.school-info .form-group{
+.school-info,
+.event-info{
+    padding-left:10px;
+}
+.school-info .form-group,
+.team-info .form-group,
+.activity-info .form-group,
+.sport-info .form-group,
+.event-info .form-group,
+.match-info .form-group{
     padding-top:10px;
 }
-.school-info .input-group{
+.school-info .input-group,
+.team-info .input-group,
+.activity-info .input-group,
+.sport-info .input-group,
+.event-info .input-group,
+.match-info .input-group{
     margin-bottom: 10px;
 }
-.school-info .input-group .label{
+.school-info .input-group .label,
+.team-info .input-group .label,
+.activity-info .input-group .label,
+.sport-info .input-group .label,
+.event-info .input-group .label,
+.match-info .input-group .label{
     padding-top:5px;
     font-weight: 600;
     text-transform: capitalize;
 }
 .school-info .form-group .input-group .input,
+.team-info .form-group .input-group .input,
+.activity-info .form-group .input-group .input,
+.sport-info .form-group .input-group .input,
+.event-info .form-group .input-group .input,
+.match-info .form-group .input-group .input,
 .input>option{
     width:100%;
     font-weight:700;
@@ -313,5 +351,130 @@ body{
     background-color: #31373e;
 }
 .form-btn .save{
-    text-align:right;
+    text-align: right;
+}
+.breadcrumb-container{
+    padding-left: 10px;
+    background-color:#2a3137;
+}
+.breadcrumb{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.breadcrumb-item{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.breadcrumb-item a{
+    color: #FFF;
+    text-decoration: none;
+}
+.breadcrumb-item a:hover{
+    color: #DCDCDC;
+    text-decoration: underline;
+}
+.breadcrumb-item.active{
+    color: rgb(170, 170, 170);
+}
+.school-logo,
+.team-logo{
+    margin-top: 2vh;
+    text-align:center;
+}
+.school-logo .logo,
+.team-logo .logo{   
+    width:150px;
+    height:150px;
+    padding:5px;
+    border-radius: 2px;
+    background-color:#212529;
+}
+.school-info-header,
+.team-info-header,
+.activity-info-header,
+.sport-info-header,
+.event-info-header,
+.match-info-header{
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+    color: #FFF;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: 2px underline;
+}
+.school-info,
+.team-info,
+.activity-info,
+.sport-info,
+.event-info,
+.match-info{
+    margin-top: 1.5vh;
+    margin-right:5px;
+    min-height: 25vh;
+}
+.info, .info-label{
+    margin-top:5px;
+    color: #FFF;
+    font-weight: 600;
+}
+.info{
+    font-size: 16px;
+    text-transform:capitalize;
+}
+.info-label{    
+    text-transform: uppercase;
+}
+.info a{
+    color:#FFF;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.info a:hover{
+    color: #878787;
+    text-decoration: 2px underline;
+}
+.info-update{
+    margin-top: 2vh;
+    text-align:center;
+}
+.info-update .btn,
+.new-container .btn{
+    font-weight:600;
+    text-transform: capitalize;
+    border-color: #212529;
+    background-color: #212529;
+}
+.info-update .btn:hover,
+.new-container .btn:hover{
+    border-color: rgb(13, 110, 253);
+    background-color: rgb(13, 110, 253);
+}
+.section-head{
+    margin-top: 3vh;
+    padding-top: 2vh;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 2px rgb(141, 141, 141) solid;
+}
+.new-container{
+    width:100%;
+    padding-right:10px;
+    text-align: right;
+}
+.team-icon{
+    text-align:center;
+}
+.team-name, .team-gender{
+    color: #FFF;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.icon{
+    width: 100px;
+    height: 100px;
 }
