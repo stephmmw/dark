@@ -230,6 +230,7 @@ body{
 }
 
 .logo{
+    margin-bottom: 15px;
     text-align:center;
 }
 .logo-preview{
@@ -285,6 +286,7 @@ body{
 .school-info .header, 
 .team-info-header,
 .activity-info-header,
+.sport-info-header,
 .event-info-header,
 .tournament-info-header,
 .match-info-header{
@@ -320,7 +322,8 @@ body{
 .event-info .input-group .label,
 .tournament-info .input-group .label,
 .match-info .input-group .label{
-    padding-top:5px;
+    margin-top:1vh;
+    margin-bottom:1vh;
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -490,16 +493,7 @@ body{
     padding-right:10px;
     text-align: right;
 }
-.team-icon{
-    text-align:center;
-}
-.team-name, .team-gender{
-    color: #FFF;
-    font-weight: 600;
-    text-align: center;
+.form-check-label{
+    font-weight:600;
     text-transform: capitalize;
-}
-.icon{
-    width: 100px;
-    height: 100px;
 }

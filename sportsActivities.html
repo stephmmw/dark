@@ -17,6 +17,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
+            <!-- Primary Nav -->
             <div class="col-12">
                 <nav class="navbar navbar-dark bg-dark navbar-expand-md">
                     <a href="../" class="navbar-brand">
@@ -38,6 +39,8 @@
                     </button>
                 </nav>
             </div>
+
+            <!-- Side Nav -->
             <div class="col-lg-3 col-xl-2">
                 <nav class="navbar-dark navbar bg-dark navbar-expand-lg">
                     <ul id="side-nav" class="side-nav navbar-nav flex-column collapse navbar-collapse">
@@ -109,6 +112,8 @@
                     </ul>
                 </nav>
             </div>
+
+            <!-- Content -->
             <div class="col-lg-9 col-xl-10">
                 <div class="content" id="content">
                     <div class="page-head">
@@ -121,7 +126,7 @@
                                 <div class="col-sm-10 col-md-8 col-lg-6">
                                     <form action="#" method="get">
                                         <div class="input-group">
-                                            <input type="text" class="form-control search" name="q" placeholder="search">
+                                            <input type="search" class="form-control search" name="q" placeholder="search">
                                             <div class="input-group-append">
                                                 <select name="f" id="filter" class="form-control filter" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Filter">
                                                     <option value="all">all</option>
@@ -164,6 +169,106 @@
                             </a>                            
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add sport/activity Button -->
+    <div class="add-btn-container">
+        <button class="btn btn-primary add-btn" data-bs-toggle="modal" data-bs-target="#add-modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add New">
+            <span>
+                <i class="fa fa-plus fa-2x"></i>
+            </span>
+        </button>
+    </div>
+
+    <!-- Add new sport/ activitymodal -->
+    <div class="modal" tabindex="-1" id="add-modal">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">add new sport/activity</h5>
+                    <button type="button" class="btn btn-primary btn-modal-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Close">
+                        <i class="fa fa-times fa-1x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                   <form method="post">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!-- logo -->
+                                <div class="col-12">
+                                    <div class="logo">
+                                        <div id="new-logo-preview" class="logo-preview">
+                                            <img src="static/img/sport-activity-logo.png" class="logo">
+                                        </div>
+                                        <div class="logo-upload">
+                                            <input type="file" name="logo" id="new-logo">
+                                            <label for="new-logo" class="btn btn-primary">select logo</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- basic information-->
+                                <div class="col-12">
+                                    <header class="sport-info-header">sport/activity information</header>
+                                    <div class="sport-info">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="input-group row">
+                                                        <div class="col-12">
+                                                            <label for="name" class="label">sport/activity name&colon;</label>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <input type="text" name="name" id="name" class="form-control input">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="input-group row">
+                                                        <div class="col-12">
+                                                            <label for="" class="label">type&colon;</label>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="type" id="activity" value="activity">
+                                                                <label class="form-check-label" for="activity">activity</label>
+                                                              </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="radio" name="type" id="sport" value="sport">
+                                                                <label class="form-check-label" for="sport">sport</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- buttons -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <div class="form-btn">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="cancel">
+                                                        <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">cancel</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="save">
+                                                        <button type="submit" class="btn btn-primary">save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </form>
                 </div>
             </div>
         </div>
