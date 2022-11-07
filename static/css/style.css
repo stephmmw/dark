@@ -241,7 +241,7 @@ body{
     width:120px;
     height:120px;
     padding: 1px;
-    border: 2px #212529 solid;
+    border: 2px #33393e solid;
     border-radius: 2px;
 }
 
@@ -276,6 +276,7 @@ body{
 .activity-info,
 .sport-info,
 .event-info,
+.tournament-info,
 .match-info{
     padding:5px;
     border: 2px #727272 solid;
@@ -285,6 +286,7 @@ body{
 .team-info-header,
 .activity-info-header,
 .event-info-header,
+.tournament-info-header,
 .match-info-header{
     font-weight:600;
     text-transform:capitalize;    
@@ -298,6 +300,7 @@ body{
 .activity-info .form-group,
 .sport-info .form-group,
 .event-info .form-group,
+.tournament-info .form-group,
 .match-info .form-group{
     padding-top:10px;
 }
@@ -306,6 +309,7 @@ body{
 .activity-info .input-group,
 .sport-info .input-group,
 .event-info .input-group,
+.tournament-info .input-group,
 .match-info .input-group{
     margin-bottom: 10px;
 }
@@ -314,6 +318,7 @@ body{
 .activity-info .input-group .label,
 .sport-info .input-group .label,
 .event-info .input-group .label,
+.tournament-info .input-group .label,
 .match-info .input-group .label{
     padding-top:5px;
     font-weight: 600;
@@ -324,6 +329,7 @@ body{
 .activity-info .form-group .input-group .input,
 .sport-info .form-group .input-group .input,
 .event-info .form-group .input-group .input,
+.tournament-info .form-group .input-group .input,
 .match-info .form-group .input-group .input,
 .input>option{
     width:100%;
@@ -377,23 +383,26 @@ body{
     color: rgb(170, 170, 170);
 }
 .school-logo,
-.team-logo{
+.team-logo,
+.sport-logo{
     margin-top: 2vh;
     text-align:center;
 }
 .school-logo .logo,
-.team-logo .logo{   
+.team-logo .logo,
+.sport-logo .logo{   
     width:150px;
     height:150px;
-    padding:5px;
+    padding:2px;
     border-radius: 2px;
-    background-color:#212529;
+    border-color:#2a2f34;
 }
 .school-info-header,
 .team-info-header,
 .activity-info-header,
 .sport-info-header,
 .event-info-header,
+.tournament-info-header,
 .match-info-header{
     margin-top: 1vh;
     margin-bottom: 0.5vh;
@@ -408,6 +417,7 @@ body{
 .activity-info,
 .sport-info,
 .event-info,
+.tournament-info,
 .match-info{
     margin-top: 1.5vh;
     margin-right:5px;
@@ -434,9 +444,19 @@ body{
     color: #878787;
     text-decoration: 2px underline;
 }
-.info-update{
+.info-operations{
     margin-top: 2vh;
+}
+.info-update{
     text-align:center;
+    padding-left:10px;
+}
+.info-delete{
+    text-align:center;
+    padding-right:10px;
+}
+.new-container{
+    margin-top: 20px;
 }
 .info-update .btn,
 .new-container .btn{
@@ -449,6 +469,11 @@ body{
 .new-container .btn:hover{
     border-color: rgb(13, 110, 253);
     background-color: rgb(13, 110, 253);
+}
+.info-delete .btn,
+.cancel .btn{
+    font-weight:600;
+    text-transform: capitalize;
 }
 .section-head{
     margin-top: 3vh;
