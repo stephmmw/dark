@@ -114,6 +114,12 @@
                     <div class="page-head">
                         <header id="content-header-name" class="page-header">streaming videos</header>
                     </div>
+                    <!-- add video button -->
+                    <div class="add-btn-container">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#add-modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add new video">
+                            new video
+                        </button>
+                    </div>
                     <!-- Content search -->
                     <div class="page-nav navbar-nav">
                         <div class="container">
@@ -178,14 +184,6 @@
             </div>
         </div>
     </div>
-    <!-- Add video Button -->
-    <div class="add-btn-container">
-        <button class="btn btn-primary add-btn" data-bs-toggle="modal" data-bs-target="#add-modal" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Add New">
-            <span>
-                <i class="fa fa-plus fa-2x"></i>
-            </span>
-        </button>
-    </div>
     <!-- add video information modal -->
     <div class="modal" tabindex="-1" id="add-modal">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -203,7 +201,7 @@
                                 <!-- Preview video-->      
                                 <div class="col-12">
                                     <div class="video-container">
-                                        <video class="preview-video" id="video" controls>
+                                        <video class="preview-video" id="video" controls autoplay>
                                             <source src="./media/video/Miracle Of Sound/ASSASSIN'S CREED UNITY SONG - My Revolution by Miracle Of Sound - YouTube.mkv" type="video/mp4">
                                         </video>
                                     </div>                            
